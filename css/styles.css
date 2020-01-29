@@ -1,0 +1,176 @@
+html, body, #mapid {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#hex1 {
+  width: 20px;
+  height: 20px;
+}
+.legendslider {
+    width: 98%;
+    padding: 20px;
+    margin: 0;
+    position: fixed;
+		bottom: 0;
+}
+
+.legend {
+    width: 10%;
+    padding: 10px;
+    margin: 0;
+    position: fixed;
+		left: 0;
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.leginputs{
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+
+
+.normaltext{
+	font-family: Futura;
+	font-size:12px;
+	margin-left: 0px;
+}
+
+input[type="text"]
+{
+	font-family: Futura;
+	font-size:12px;
+	width:50px;
+}
+
+.leghex{
+    padding: 10px;
+    margin: 0;
+    position: fixed;
+  	right: 0;
+  	bottom: 0;
+  	padding-bottom: 48px;
+  	padding-right: 120px;
+}
+
+.legnum{
+
+	padding: 10px;
+    margin: 0;
+    position: fixed;
+  	right: 0;
+  	bottom: 0;
+  	padding-bottom: 50px;
+
+}
+
+.popup {
+
+   height: 300px;
+   width: 300px;
+   overflow: auto;
+}
+
+img {
+
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container{
+
+    max-width: 960px;
+    width: 90%;
+    left: 5%;
+    margin: auto;
+}
+p {
+
+width: 250px;
+}
+
+#mapBox
+{
+ flex:5;
+ position:relative;
+ border:1px solid red; 
+}
+
+#logoContainer {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 50px;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+  background-color: white;
+  width: 200px;
+  height: 170px;
+}
+
+h1, form, button {
+  font-family: 'roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.newcon {
+	padding-left: 20px;
+    width: 80%;
+}
+
+h1 {
+  
+  font-size: 24px;
+  background: darken($color, 4%);
+  color: black;
+}
+
+h2 {
+
+  font-size: 14px;
+  background: darken($color, 4%);
+  color: black;
+}
+
+.cool {
+
+  box-shadow: 0px 0px 0px 1px;
+ }
+		
