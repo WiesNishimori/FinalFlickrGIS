@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+    	<!-- leaflet dependencies and jquery -->
+    	<link rel = "stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   		crossorigin=""/>
+ 		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   		crossorigin=""></script>
+   		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+   		<script src="data/leaflet.ajax.min.js"></script>
+   		<script type="text/javascript" src="js/test.geojson"></script>
+
+   		<!--  favicon link -->
+   		<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+   		<!-- slider dependencies -->
+   		<link href="https://refreshless.com/nouislider/distribute/nouislider.css?v=1410" rel="stylesheet">
+    	<script src="https://refreshless.com/nouislider/distribute/nouislider.js?v=1410"></script>
+
+
+        <style>
+			.c-1-color { background: #0C0CD7; }
+			.c-2-color { background: #3939D1; }
+			.c-3-color { background: #6666CB; }
+			.c-4-color { background: #9393C5; }
+			.c-5-color { background: #DEDEDE; }
+		</style>
+
+        <title>Paris</title>
+
+	</head>
+
+	<body>
+
+		<div style="z-index: 10000" class = "legendslider">
+            <div class="slider" id="slider-color" ></div>
+        </div>
+		
+		<div class = "leghex" style="z-index: 10000">
+		<div id="hex1" class="hexagon-wrapper">
+		    <div class="hexagon c-1-color"></div> 
+		</div> <br>
+		<div id="hex1" class="hexagon-wrapper">
+		    <div class="hexagon c-2-color"></div>
+		</div> <br>
+		<div id="hex1" class="hexagon-wrapper">
+		    <div class="hexagon c-3-color"></div>
+		</div> <br>
+		<div id="hex1" class="hexagon-wrapper">
+		    <div class="hexagon c-4-color"></div>
+		</div> <br>
+		<div id="hex1" class="hexagon-wrapper">
+		    <div class="hexagon c-5-color"></div>
+		</div>
+		</div>
+
+		<div class ="legnum" style="z-index: 10000">
+			<div class = "normaltext"> Number of Pictures<br>Taken in Each Hex</div>
+	        <div class = "leginputs"><input type="text" id="input4"></div><div id='maxinput' class = "leginputs normaltext"></div><br>
+            <div class = "leginputs"><input type="text" id="input3"></div><div id="dyninput4" class = "leginputs normaltext"></div><br>
+            <div class = "leginputs"><input type="text" id="input2"></div><div id="dyninput3" class = "leginputs normaltext"></div><br>
+            <div class = "leginputs"><input type="text" id="input1"></div><div id="dyninput2" class = "leginputs normaltext"></div><br>
+            <div class = "leginputs normaltext" style="margin-left: 8px">0</div><div style="margin-left: 45px"id="dyninput1" class = "leginputs normaltext"></div><br>
+		</div>
+		
+		<div id="mapid" > </div>
+
+		<div id="logoContainer">
+        	<div class = "newcon">
+			<h1>Flickr GIS Project</h1>
+            <h2>An Interactive Picture Frequency Map</h2>
+        	</div>
+        </div>
+
+	</body>
+
+	<script src="js/mapjs.js"></script>
+
+</html>
